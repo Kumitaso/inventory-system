@@ -1,2 +1,25 @@
-# inventory-system
-Excel VBA × MySQL連携
+# 在庫管理システム（Excel VBA × MySQL）
+
+## 📦 概要
+ExcelからMySQLに接続し、商品マスタの情報を操作できる業務用ツールです。
+
+## 🔧 使用技術
+- Excel VBA（ADODB接続）
+- MySQL（ローカル環境）
+- ODBCドライバ（MySQL ODBC 9.3）
+
+## 🔁 主な機能
+- 商品一覧の取得（SELECT）
+- 単価の更新（UPDATE）
+- データベースとの接続・切断
+
+## 📸 操作画面（作成中）
+
+## 🗂 ファイル構成
+- `商品一覧を取得する.bas` ... 商品一覧をExcelに出力するマクロ
+- `DB設計.sql` ... テーブル作成用SQL
+
+## 📝 今後の予定
+- 入荷履歴の登録
+- フォームから登録・編集
+- データ集計（GROUP BY）
