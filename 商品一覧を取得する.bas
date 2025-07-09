@@ -1,35 +1,35 @@
-Attribute VB_Name = "¤•iˆê——‚ğæ“¾‚·‚é"
-Sub ¤•iˆê——‚ğæ“¾‚·‚é()
+Attribute VB_Name = "å•†å“ä¸€è¦§ã‚’å–å¾—ã™ã‚‹"
+Sub å•†å“ä¸€è¦§ã‚’å–å¾—ã™ã‚‹()
 
 Dim conn As New ADODB.Connection
 Dim rs As New ADODB.Recordset
 Dim sql As String
 Dim row As Long
 
-conn.Open "Driver={MySQL ODBC 9.3 Unicode Driver}; SERVER=localhost; DATABASE=kumiko_inventory; USER=root; PASSWORD=9350;"
+conn.Open "Driver={MySQL ODBC 9.3 Unicode Driver}; SERVER=localhost; DATABASE=****; USER=****; PASSWORD=****;"
 
-' SQLƒNƒGƒŠ
-sql = "SELECT * FROM ¤•iƒ}ƒXƒ^"
+' SQLã‚¯ã‚¨ãƒª
+sql = "SELECT * FROM å•†å“ãƒã‚¹ã‚¿"
 
-' Às‚µ‚ÄƒŒƒR[ƒhƒZƒbƒg‚É“ü‚ê‚é
+' å®Ÿè¡Œã—ã¦ãƒ¬ã‚³ãƒ¼ãƒ‰ã‚»ãƒƒãƒˆã«å…¥ã‚Œã‚‹
 rs.Open sql, conn
 
-' Œ‹‰Ê‚ğExcel‚Éo—ÍIiA2‚©‚çj
+' çµæœã‚’Excelã«å‡ºåŠ›ï¼ï¼ˆA2ã‹ã‚‰ï¼‰
 row = 2
 Do Until rs.EOF
-    Cells(row, 1).Value = rs.Fields("¤•iID")
-    Cells(row, 2).Value = rs.Fields("¤•i–¼")
-    Cells(row, 3).Value = rs.Fields("ƒJƒeƒSƒŠ")
-    Cells(row, 4).Value = rs.Fields("d“ü’P‰¿")
+    Cells(row, 1).Value = rs.Fields("å•†å“ID")
+    Cells(row, 2).Value = rs.Fields("å•†å“å")
+    Cells(row, 3).Value = rs.Fields("ã‚«ãƒ†ã‚´ãƒª")
+    Cells(row, 4).Value = rs.Fields("ä»•å…¥å˜ä¾¡")
     row = row + 1
     rs.MoveNext
 Loop
 
-'‚±‚±‚ÅSQL‚ğ”­s‚µ‚Ü‚·B
+'ã“ã“ã§SQLã‚’ç™ºè¡Œã—ã¾ã™ã€‚
 rs.Close: Set rs = Nothing
 conn.Close
 Set conn = Nothing
 
-MsgBox "¤•iˆê——‚ğæ“¾‚µ‚Ü‚µ‚½I"
+MsgBox "å•†å“ä¸€è¦§ã‚’å–å¾—ã—ã¾ã—ãŸï¼"
     
 End Sub
