@@ -1,1 +1,0 @@
-USE kumiko_inventory;
